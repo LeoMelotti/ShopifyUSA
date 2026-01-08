@@ -1,34 +1,61 @@
-# ShopifyUSA – AI Context (Fonte da Verdade)
+# ShopifyUSA – AI Context (Fonte Única da Verdade)
 
 ## Projeto
-- Shopify Online Store 2.0
-- Tema custom desenvolvido do zero
-- Foco: performance, clareza e escalabilidade
+- Loja Shopify B2B da Eleven Fragrances (EUA)
+- Tema base: Concept by RoarTheme (v5.2.0)
+- Tema customizado (não usar como stock theme)
 
 ## Stack
+- Shopify Online Store 2.0
 - Liquid
-- JavaScript vanilla (ES6+)
-- CSS modular (sem frameworks)
+- JavaScript Vanilla (ES6+)
+- CSS custom (override do theme)
 
-## Regras Arquiteturais
-- Nada de lógica pesada em Liquid
-- JavaScript sempre externo (assets)
-- Sections controlam layout
-- Snippets apenas para UI reutilizável
-- Metafields para conteúdo dinâmico
+## Regras Importantes do Tema Concept
+- Respeitar estrutura original do tema Concept
+- Evitar alterar core sections do tema quando possível
+- Customizações preferencialmente via:
+  - sections custom
+  - templates JSON
+  - snippets reutilizáveis
+- CSS sobrescrito via assets/theme.css
+- Variáveis e fontes em snippets/css-variables.liquid
 
-## Padrões
-- Sem jQuery
-- Sem inline JS
-- Classes com padrão BEM simplificado
-- Imagens sempre com lazy loading e srcset
+## Padrões Visuais Obrigatórios
+- Fontes:
+  - BC Sklonar Light (logo)
+  - Elza Bold (títulos)
+  - Elza Regular (body)
+  - Richmond Display (subtítulos)
+- Paleta fixa conforme brandbook Eleven Fragrances
+- Estética premium, B2B, limpa
 
-## Estado Atual do Projeto
-- Repositório iniciado
-- Tema sendo estruturado do zero
-- Ainda sem sections finais definidas
+## Regras de Código
+- Proibido jQuery
+- Proibido inline JS
+- JavaScript sempre em assets
+- Nada de lógica complexa em Liquid
+- Usar metafields sempre que possível
+
+## Estrutura Atual Importante
+- Homepage construída via index.json
+- Templates custom:
+  - page.how-it-works.json
+  - page.for-business.json
+  - page.find-your-scent.json
+  - page.custom-fragrances.json
+- Sections custom:
+  - quiz-find-your-scent.liquid
+  - custom-fragrance-form.liquid
+
+## Estado Atual
+- Tema funcional
+- Identidade visual completa aplicada
+- Customizações avançadas já implementadas
+- Novas features devem respeitar tudo acima
 
 ## Instruções para IA
-- Não alterar padrões existentes
-- Não propor nova arquitetura sem perguntar
-- Sempre respeitar este arquivo como verdade absoluta
+- Nunca sugerir trocar de tema
+- Nunca reestruturar arquitetura sem perguntar
+- Sempre considerar que este projeto já está avançado
+- Qualquer mudança deve ser incremental
